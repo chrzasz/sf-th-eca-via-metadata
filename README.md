@@ -136,6 +136,8 @@ There is no need to create a policies file while configuring an external client 
 
     `sf project retrieve start --manifest manifest/package.xml --target-org <username>`
 
+    ![retrieve](zzz_temp/images/retrieve.png)
+
 3. Verify Your App
     
     After successfully deploying and retrieving the external client app, you should see a policies file in your SFDX project where there wasn’t one before.
