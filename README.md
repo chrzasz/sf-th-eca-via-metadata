@@ -146,5 +146,7 @@ There is no need to create a policies file while configuring an external client 
 
     Open the External Client App Manager and see a new external client app called ecaViaMetadata
 
+    ![ClientAppManager](zzz_temp/images/ClientAppManager.png)
+
 ### Trailhead
 [ECA](https://trailhead.salesforce.com/content/learn/projects/create-an-external-client-app-using-metadata-api/create-an-external-client-app)
