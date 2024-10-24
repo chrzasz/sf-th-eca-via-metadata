@@ -129,14 +129,40 @@ There is no need to create a policies file while configuring an external client 
 
     `sf project deploy start --manifest manifest/package.xml --target-org <Username>`
 
-    ![deploy](zzz_temp/images/deploy.png)
+    ```
+    $ sf project deploy start --manifest manifest/package.xml
+    Deploying v62.0 metadata to grzegorz.chrzaszczyk@wise-badger-ja7h71.com using the v62.0 SOAP API.
+    Deploy ID: 0AfQy00000BMjJeKAL
+    Status: Succeeded | ████████████████████████████████████████ | 3/3 Components
+
+    Deployed Source
+    ==================================================================================================================================================================
+    | State     Name                    Type                           Path
+    | ───────── ─────────────────────── ────────────────────────────── ─────────────────────────────────────────────────────────────────────────────────────────────── 
+    | Created   ecaViaMetadata          ExternalClientApplication      force-app\main\default\externalClientApps\ecaViaMetadata.eca-meta.xml
+    | Created   ecaViaMetadataGlblOAuth ExtlClntAppGlobalOauthSettings force-app\main\default\extlClntAppGlobalOauthSets\ecaViaMetadataGlblOAuth.ecaGlblOauth-meta.xml
+    | Created   ecaViaMetadataSettings  ExtlClntAppOauthSettings       force-app\main\default\extlClntAppOauthSettings\ecaViaMetadataSettings.ecaOauth-meta.xml
+    ```
 
 
 2. Retrieve the external client app from your Trailhead Playground. Replace `username` with the username you used to log in when you authorized the Dev Hub.
 
     `sf project retrieve start --manifest manifest/package.xml --target-org <username>`
 
-    ![retrieve](zzz_temp/images/retrieve.png)
+    ```
+    $ sf project retrieve start --manifest manifest/package.xml
+    Retrieving v62.0 metadata from grzegorz.chrzaszczyk@wise-badger-ja7h71.com using the v62.0 SOAP API
+    Preparing retrieve request... Succeeded
+
+    Retrieved Source
+    ==============================================================================================================================================================================================
+    | State   Name                                 Type                                 Path
+    | ─────── ──────────────────────────────────── ──────────────────────────────────── ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    | Changed ecaViaMetadata                       ExternalClientApplication            force-app\main\default\externalClientApps\ecaViaMetadata.eca-meta.xml
+    | Changed ecaViaMetadataGlblOAuth              ExtlClntAppGlobalOauthSettings       force-app\main\default\extlClntAppGlobalOauthSets\ecaViaMetadataGlblOAuth.ecaGlblOauth-meta.xml
+    | Created ecaViaMetadataSettings_defaultPolicy ExtlClntAppOauthConfigurablePolicies force-app\main\default\extlClntAppOauthPolicies\ecaViaMetadataSettings_defaultPolicy.ecaOauthPlcy-meta.xml
+    | Changed ecaViaMetadataSettings               ExtlClntAppOauthSettings             force-app\main\default\extlClntAppOauthSettings\ecaViaMetadataSettings.ecaOauth-meta.xml
+    ```
 
 3. Verify Your App
     
