@@ -1,5 +1,12 @@
 # Salesforce DX Project - External Client App
 
+## Prepare Your Environment
+
+- Enable Opt in to External Client Apps
+
+    ![image](https://github.com/user-attachments/assets/38618347-a5bf-4c31-8b8a-1ea7d25b6e68)
+
+
 ## Create an SFDX Project
 
 `sf project generate --name ecaViaMetadata --template standard`
