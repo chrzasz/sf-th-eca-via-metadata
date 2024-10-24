@@ -8,5 +8,5 @@
   "name": "ecaViaMetadata",
   "namespace": "",
   "sfdcLoginUrl": "https://wise-badger-ja7h71-dev-ed.trailblaze.my.salesforce.com",
-  "sourceApiVersion": "61.0"
+  "sourceApiVersion": "62.0"
 }

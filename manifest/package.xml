@@ -4,5 +4,17 @@
         <members>*</members>
         <name>ExternalClientApplication</name>
     </types>
-    <version>61.0</version>
+    <types>
+        <members>*</members>
+        <name>ExtlClntAppOauthSettings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExtlClntAppGlobalOauthSettings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExtlClntAppOauthConfigurablePolicies</name>
+    </types>
+    <version>62.0</version>
 </Package>
