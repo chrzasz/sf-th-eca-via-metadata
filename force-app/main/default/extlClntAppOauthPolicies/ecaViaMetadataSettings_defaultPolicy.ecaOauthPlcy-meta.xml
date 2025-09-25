@@ -4,7 +4,6 @@
     <ipRelaxationPolicyType>Enforce</ipRelaxationPolicyType>
     <isClientCredentialsFlowEnabled>false</isClientCredentialsFlowEnabled>
     <isGuestCodeCredFlowEnabled>false</isGuestCodeCredFlowEnabled>
-    <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
     <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
     <label>ecaViaMetadataSettings_defaultPolicy</label>
     <permittedUsersPolicyType>AllSelfAuthorized</permittedUsersPolicyType>
